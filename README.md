@@ -45,8 +45,8 @@ feature/livre-2          ●─●
 
 ### 🟢 PHASE 1 : Initialisation de la plateforme (Personne 1)
 
-1. Ouvrez un dossier vide dans **VS Code**.
-2. Créez le fichier **`index.html`** avec le squelette et la charte graphique :
+1. J'ouvrez un dossier vide dans **VS Code**.
+2. Je crer le fichier **`index.html`** avec le squelette et la charte graphique :
 
 ```html
 <!DOCTYPE html>
@@ -88,7 +88,7 @@ feature/livre-2          ●─●
 </html>
 ```
 
-3. Exécutez dans le terminal de VS Code :
+3. J'xécute dans le terminal de VS Code :
 ```bash
 git init
 git add .
@@ -101,7 +101,7 @@ git push -u origin master
 git switch -c develop
 git push -u origin develop
 ```
-4. **Action GitHub :** Allez dans *Settings > Collaborators* et invitez les 4 membres.
+4. **Action GitHub :** J'invite les 4 membres.
 
 ---
 
