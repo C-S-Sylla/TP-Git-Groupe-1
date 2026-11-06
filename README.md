@@ -94,7 +94,7 @@ git init
 git add .
 git commit -m "init: structure de base revue de livres cyberpunk"
 git branch -M master
-git remote add origin https://github.com/VOTRE_ORGANISATION/VOTRE_REPO.git
+git remote add origin https://github.com/C-S-Sylla/TP-Git-Groupe-1.git
 git push -u origin master
 
 # Création de la branche d'intégration
