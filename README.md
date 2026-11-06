@@ -17,11 +17,11 @@ Ce projet met en pratique le modèle industriel **GitFlow** en équipe, avec rev
 
 | Rôle | Membre | Branche de travail | Cible de la PR | Mission principale |
 | :--- | :--- | :--- | :--- | :--- |
-| **1. Lead / DevOps** | Personne 1 | `master` & `develop` | Dépôt initial | Initialise l'architecture, le style Cyberpunk, la Navbar et configure le dépôt GitHub. |
+| **1. Lead / DevOps** | Personne 1 (Cheikh Sylla) | `master` & `develop` | Dépôt initial | Initialise l'architecture, le style Cyberpunk, la Navbar et configure le dépôt GitHub. |
 | **2. Dev Livre 1** | Personne 2 | `feature/livre-1` | `develop` | Fiche du livre *Neuromancien*, système de notation et formulaire d'avis. |
 | **3. Dev Livre 2** | Personne 3 | `feature/livre-2` | `develop` | Fiche du livre *1984*, système de notation et formulaire d'avis. |
 | **4. Release Manager**| Personne 4 | `release/v1.0.0` | `master` & `develop` | Ajoute le Footer, stabilise la version `1.0.0` et pose le Tag officiel. |
-| **5. Hotfix Support** | Personne 5 | `hotfix/v1.0.1` | `master` & `develop` | Corrige le bug critique (avis non affichés) en injectant le JS et monte la version à `1.0.1`. |
+| **5. Hotfix Support** | Personne 5 (Sidahmed) | `hotfix/v1.0.1` | `master` & `develop` | Corrige le bug critique (avis non affichés) en injectant le JS et monte la version à `1.0.1`. |
 
 ---
 
@@ -265,7 +265,7 @@ Les deux fonctionnalités sont réunies sur `develop`. Personne 4 finalise la ve
 
 ---
 
-### 🔴 PHASE 4 : Hotfix critique en Production (Personne 5)
+### 🔴 PHASE 4 : Hotfix critique en Production (Personne 5 (Sidahmed))
 
 > **Constat du bug en production :**  
 > En testant la version `1.0.0` sur `master`, un dysfonctionnement majeur est détecté : **le clic sur les boutons d'envoi n'affiche aucun avis à l'écran**.  
