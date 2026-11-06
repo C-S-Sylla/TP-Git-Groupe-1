@@ -18,9 +18,9 @@ Ce projet met en pratique le modèle industriel **GitFlow** en équipe, avec rev
 | Rôle | Membre | Branche de travail | Cible de la PR | Mission principale |
 | :--- | :--- | :--- | :--- | :--- |
 | **1. Lead / DevOps** | Personne 1 (Cheikh Sylla) | `master` & `develop` | Dépôt initial | Initialise l'architecture, le style Cyberpunk, la Navbar et configure le dépôt GitHub. |
-| **2. Dev Livre 1** | Personne 2 | `feature/livre-1` | `develop` | Fiche du livre *Neuromancien*, système de notation et formulaire d'avis. |
+| **2. Dev Livre 1** | Personne 2 (Gnima Sane) | `feature/livre-1` | `develop` | Fiche du livre *Neuromancien*, système de notation et formulaire d'avis. |
 | **3. Dev Livre 2** | Personne 3 | `feature/livre-2` | `develop` | Fiche du livre *1984*, système de notation et formulaire d'avis. |
-| **4. Release Manager**| Personne 4 | `release/v1.0.0` | `master` & `develop` | Ajoute le Footer, stabilise la version `1.0.0` et pose le Tag officiel. |
+| **4. Release Manager**| Personne 4 (Abakar) | `release/v1.0.0` | `master` & `develop` | Ajoute le Footer, stabilise la version `1.0.0` et pose le Tag officiel. |
 | **5. Hotfix Support** | Personne 5 (Sidahmed) | `hotfix/v1.0.1` | `master` & `develop` | Corrige le bug critique (avis non affichés) en injectant le JS et monte la version à `1.0.1`. |
 
 ---
@@ -105,7 +105,7 @@ git push -u origin develop
 
 ---
 
-### 🟡 PHASE 2 : Développement des fonctionnalités (Personnes 2 & 3)
+### 🟡 PHASE 2 : Développement des fonctionnalités (Personnes 2 & 3 (Gnima Sane & ...))
 
 > **Pour l'équipe :** Clonez le projet sur votre VS Code :  
 > `git clone https://github.com/C-S-Sylla/TP-Git-Groupe-1`
@@ -226,7 +226,7 @@ git push -u origin develop
 
 ---
 
-### 🔵 PHASE 3 : Préparation de la Release v1.0.0 (Personne 4)
+### 🔵 PHASE 3 : Préparation de la Release v1.0.0 (Personne 4 (Abakar))
 
 Les deux fonctionnalités sont réunies sur `develop`. Personne 4 finalise la version de production.
 
