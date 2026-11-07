@@ -111,7 +111,41 @@
   <footer class="max-w-6xl mx-auto px-6 py-6 mt-12 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-zinc-500">
     <span class="cyber-font tracking-widest text-[#FCEE09] neon-yellow">CYBER-BOOKS</span>
     <span>© 2026 CYBER-BOOKS // Avis &amp; Notations. Tous droits réservés.</span>
-    <span class="bg-zinc-900 border border-[#00F0FF] text-[#00F0FF] px-3 py-1 font-bold">v1.0.0</span>
+    <span class="text-[#FCEE09] font-bold">CYBER-BOOKS // VERSION 1.0.1</span>
   </footer>
 </body>
+ <!-- SCRIPT HOTFIX : AFFICHAGE DYNAMIQUE DES COMMENTAIRES -->
+     <script>
+       function addReview(btnId, pseudoId, noteId, commentId, listId, colorBorder, colorText) {
+         document.getElementById(btnId).addEventListener('click', function() {
+           const pseudo = document.getElementById(pseudoId).value.trim();
+           const note = document.getElementById(noteId).value;
+           const comment = document.getElementById(commentId).value.trim();
+
+           if (!pseudo || !comment) {
+             alert("SYSTÈME : Remplissez le pseudo et le commentaire avant d'envoyer.");
+             return;
+           }
+
+           const reviewCard = document.createElement('div');
+           reviewCard.className = `bg-zinc-900 border-l-2 ${colorBorder} p-3 text-xs flex flex-col gap-1 transition-all`;
+           reviewCard.innerHTML = `
+             <div class="flex justify-between items-center text-zinc-400">
+               <span class="font-bold text-white uppercase">[ID: ${pseudo}]</span>
+               <span class="${colorText} font-bold">${note}</span>
+             </div>
+             <p class="text-zinc-300 italic">"${comment}"</p>
+           `;
+
+           document.getElementById(listId).prepend(reviewCard);
+
+           document.getElementById(pseudoId).value = '';
+           document.getElementById(commentId).value = '';
+         });
+       }
+
+       addReview('btn-1', 'pseudo-1', 'note-1', 'comment-1', 'reviews-list-1', 'border-[#FCEE09]', 'text-[#FCEE09]');
+       addReview('btn-2', 'pseudo-2', 'note-2', 'comment-2', 'reviews-list-2', 'border-[#00F0FF]', 'text-[#00F0FF]');
+     </script>
+   </body>
 </html>
